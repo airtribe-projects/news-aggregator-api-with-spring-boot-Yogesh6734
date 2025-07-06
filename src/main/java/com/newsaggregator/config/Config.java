@@ -8,9 +8,17 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.web.client.RestTemplate;
+import org.springframework.web.reactive.function.client.WebClient;
 
 @Configuration
 public class Config {
+
+
+    @Bean
+    public WebClient webClient(){
+        return WebClient.builder().build();
+    }
 
     @Bean
     public PasswordEncoder passwordEncoder(){

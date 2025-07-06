@@ -1,17 +1,13 @@
 package com.newsaggregator.service;
 
-import com.newsaggregator.DTO.PreferencesDTO;
 import com.newsaggregator.DTO.PreferencesResponseDTO;
 import com.newsaggregator.Entity.NewsType;
 import com.newsaggregator.Entity.Users;
-import com.newsaggregator.exception.UserNotFoundException;
 import com.newsaggregator.repository.NewsTypeRepository;
 import com.newsaggregator.repository.UsersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
